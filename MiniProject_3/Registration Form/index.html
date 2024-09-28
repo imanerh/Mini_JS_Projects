@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <h2 class="text-center">Formulaire d'inscription</h2>
+            <form id="myForm">
+                <div class="form-group">
+                    <label for="identifiant">Identifiant :</label>
+                    <input type="text" class="form-control" id="identifiant" name="identifiant" maxlength="12">
+                    <span class="error text-danger" id="identifiantError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom">
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" class="form-control" id="nom" name="nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Âge :</label>
+                    <input type="number" class="form-control" id="age" name="age" min="18">
+                    <span class="error text-danger" id="ageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                    <span class="password-strength" id="passwordStrength">Force : 0%</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordConfirm">Confirmez le mot de passe :</label>
+                    <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+                    <span class="error text-danger" id="passwordConfirmError"></span>
+                </div>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="cgu">
+                    <label class="form-check-label" for="cgu">J'accepte les CGU</label>
+                    <span class="error text-danger" id="cguError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitBtn" disabled>Soumettre</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
