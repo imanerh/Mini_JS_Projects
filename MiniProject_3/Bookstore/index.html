@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bookstore</h1>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="form-group">
+                    <label for="books" class="font-weight-bold">Choose a book:</label>
+                    <select id="books" class="form-control"></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="book-details" class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img id="book-image" src="https://via.placeholder.com/150" class="card-img" alt="Book cover">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title"></h3>
+                                <p class="book-author"></p>
+                                <p class="card-subtitle mb-2 text-muted"></p>
+                                <p class="book-description"></p>
+                                <p><strong>Publisher:</strong> <span id="book-publisher"></span></p>
+                                <p><strong>Pages:</strong> <span id="book-pages"></span></p>
+                                <p class="book-price"></p>
+                                <a href="#" id="book-website" class="btn btn-info" target="_blank">Learn More</a>
+                                <button id="add-to-cart-btn" class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <h2>Cart</h2>
+                <ul id="cart" class="list-group mb-3"></ul>
+                <div class="d-flex justify-content-between">
+                    <p><strong>Total:</strong> $<span id="total" class="font-weight-bold">0.00</span></p>
+                    <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
