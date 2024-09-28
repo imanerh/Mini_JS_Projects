@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 70%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#clock {
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.active-checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.active-checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.reminder {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+}
+
+.reminder input {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.reminder input[type="number"] {
+    max-width: 60px;
+}
+
+.reminder input[type="text"] {
+    flex: 2;
+}
+
+.removeBtn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.removeBtn:hover {
+    background-color: #c82333;
+}
+
+#remindersUl {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
